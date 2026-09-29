@@ -160,7 +160,7 @@
 
   <br/>
 
-  <p><b>Made with 💖 by Siddhi</b></p>
+  <p><b>Made with 🎀 by Siddhi</b></p>
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFD3B6,50:FFAAA6,100:F8969E&height=100&section=footer" width="100%" />
 

@@ -61,34 +61,20 @@
     <circle cx="103" cy="27" r="3.2" fill="#FFD3B6" />
     <circle cx="113" cy="27" r="3.2" fill="#A8D8B9" />
 
-    <!-- Screen Content: Clear Vector AI Neural Brain & Code Lines -->
-    <!-- Clear Vector AI Brain on Screen -->
-    <g transform="translate(167, 68) scale(0.9)">
-      <!-- Left Brain Hemisphere -->
-      <path d="M-4,-24 C-16,-24 -26,-15 -26,-4 C-26,2 -22,8 -20,11 C-25,14 -24,24 -16,25 C-12,25 -8,23 -4,21 Z" fill="none" stroke="#F8969E" stroke-width="2" stroke-linecap="round" />
-      <!-- Right Brain Hemisphere -->
-      <path d="M4,-24 C16,-24 26,-15 26,-4 C26,2 22,8 20,11 C25,14 24,24 16,25 C12,25 8,23 4,21 Z" fill="none" stroke="#FFD3B6" stroke-width="2" stroke-linecap="round" />
-      
-      <!-- Central Neural Core Line -->
-      <line x1="0" y1="-20" x2="0" y2="20" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6" />
+    <!-- Screen Content: Simple & Clean Hello World Terminal -->
+    <g transform="translate(95, 54)">
+      <!-- Command input line -->
+      <text x="0" y="0" font-family="'Fira Code', 'Courier New', monospace" font-size="11" font-weight="600" fill="#F8969E">&gt; print(&quot;hello world&quot;)</text>
 
-      <!-- Synaptic Nodes & Connection Lines -->
-      <line x1="-15" y1="-8" x2="0" y2="0" stroke="#F8969E" stroke-width="1.2" opacity="0.7" />
-      <line x1="15" y1="-8" x2="0" y2="0" stroke="#FFD3B6" stroke-width="1.2" opacity="0.7" />
-      <line x1="-10" y1="12" x2="0" y2="0" stroke="#F8969E" stroke-width="1.2" opacity="0.7" />
-      <line x1="10" y1="12" x2="0" y2="0" stroke="#FFD3B6" stroke-width="1.2" opacity="0.7" />
+      <!-- Output Line -->
+      <text x="0" y="22" font-family="'Fira Code', 'Courier New', monospace" font-size="13" font-weight="700" fill="#FFF1E5">hello world ✨</text>
 
-      <!-- Glowing Neural Dots -->
-      <circle cx="-15" cy="-8" r="3" fill="#F8969E" filter="url(#sparkleGlow)" />
-      <circle cx="15" cy="-8" r="3" fill="#FFD3B6" filter="url(#sparkleGlow)" />
-      <circle cx="-10" cy="12" r="2.8" fill="#F8969E" />
-      <circle cx="10" cy="12" r="2.8" fill="#FFD3B6" />
-      <circle cx="0" cy="0" r="3.5" fill="#FFFFFF" filter="url(#sparkleGlow)" />
+      <!-- Prompt Line with Cursor -->
+      <g transform="translate(0, 39)">
+        <text x="0" y="0" font-family="'Fira Code', 'Courier New', monospace" font-size="10" font-weight="500" fill="#FFD3B6">&gt; ready_</text>
+        <rect x="52" y="-9" width="6" height="11" rx="1" fill="#F8969E" opacity="0.8" />
+      </g>
     </g>
-
-    <!-- Mini Code / Terminal Labels on Screen -->
-    <text x="92" y="47" font-family="'Fira Code', 'Courier New', monospace" font-size="9" fill="#F8969E" font-weight="600">&gt; siddhi.ai()</text>
-    <text x="92" y="98" font-family="'Fira Code', 'Courier New', monospace" font-size="8" fill="#8B949E">neural core: OK</text>
 
     <!-- Floating Sparkles around Monitor -->
     <g fill="#FFFAF4" filter="url(#sparkleGlow)">

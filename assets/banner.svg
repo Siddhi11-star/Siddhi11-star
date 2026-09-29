@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="100%" height="250">
   <defs>
     <!-- Background Gradient Matching the Reference -->
-    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="85%">
       <stop offset="0%" stop-color="#D9808E" />
       <stop offset="35%" stop-color="#DC8F8F" />
       <stop offset="70%" stop-color="#D49B88" />
       <stop offset="100%" stop-color="#C89B84" />
+    </linearGradient>
+
+    <!-- Monitor Screen Gradient -->
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191D26" />
+      <stop offset="100%" stop-color="#12151C" />
     </linearGradient>
 
     <!-- Drop Shadow for Text -->
@@ -13,7 +19,7 @@
       <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.22" />
     </filter>
     
-    <!-- Glow filter -->
+    <!-- Glow filter for sparkles and neural lines -->
     <filter id="sparkleGlow" x="-30%" y="-30%" width="160%" height="160%">
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
@@ -23,88 +29,77 @@
   <!-- Background Canvas -->
   <rect width="900" height="250" rx="14" fill="url(#bannerGrad)" />
 
-  <!-- Background Pixel Specks -->
+  <!-- Background Pixel Specks / Atmosphere -->
   <g opacity="0.2" fill="#FFFFFF">
     <rect x="50" y="25" width="6" height="6" />
     <rect x="120" y="18" width="6" height="6" />
-    <rect x="80" y="55" width="6" height="6" />
-    <rect x="230" y="35" width="6" height="6" />
-    <rect x="270" y="75" width="7" height="7" />
-    <rect x="320" y="115" width="7" height="7" />
-    <rect x="300" y="145" width="6" height="6" />
-    <rect x="350" y="85" width="7" height="7" />
+    <rect x="360" y="45" width="6" height="6" />
+    <rect x="390" y="85" width="7" height="7" />
+    <rect x="410" y="25" width="6" height="6" />
+    <rect x="830" y="45" width="7" height="7" />
+    <rect x="850" y="195" width="6" height="6" />
   </g>
 
-  <!-- Left: Pixel Art Tech Illustration (Brain + Keyboard + Mouse) -->
-  <g transform="translate(45, 20)">
+  <!-- Left: Cozy Tech Workstation (Monitor + Keyboard + Mouse) -->
+  <g transform="translate(45, 18)">
 
-    <!-- PIXEL ART BRAIN -->
-    <!-- Left Lobe (Soft Pink / Magenta) -->
-    <g fill="#E58897">
-      <rect x="54" y="18" width="18" height="9" />
-      <rect x="36" y="27" width="36" height="9" />
-      <rect x="27" y="36" width="54" height="9" />
-      <rect x="18" y="45" width="63" height="18" />
-      <rect x="27" y="63" width="54" height="18" />
-      <rect x="36" y="81" width="45" height="9" />
-      <rect x="45" y="90" width="36" height="9" />
-    </g>
-    <!-- Pink Highlights & Lobe Contours -->
-    <g fill="#F7A8B5">
-      <rect x="45" y="27" width="18" height="9" />
-      <rect x="36" y="36" width="18" height="9" />
-      <rect x="27" y="45" width="18" height="9" />
-      <rect x="36" y="63" width="18" height="9" />
-      <rect x="54" y="72" width="18" height="9" />
-    </g>
-    <g fill="#B85C6C">
-      <rect x="45" y="45" width="9" height="18" />
-      <rect x="54" y="54" width="18" height="9" />
-      <rect x="36" y="72" width="9" height="9" />
-      <rect x="18" y="54" width="9" height="9" />
-    </g>
+    <!-- COMPUTER MONITOR (Clear, distinct workstation screen) -->
+    <!-- Monitor Stand -->
+    <rect x="156" y="112" width="22" height="22" rx="2" fill="#A88167" />
+    <rect x="142" y="130" width="50" height="7" rx="3" fill="#8E6348" />
 
-    <!-- Right Lobe (Warm Golden Sand / Beige) -->
-    <g fill="#E2BE9E">
-      <rect x="81" y="18" width="18" height="9" />
-      <rect x="81" y="27" width="36" height="9" />
-      <rect x="72" y="36" width="54" height="9" />
-      <rect x="72" y="45" width="63" height="18" />
-      <rect x="72" y="63" width="54" height="18" />
-      <rect x="72" y="81" width="45" height="9" />
-      <rect x="72" y="90" width="36" height="9" />
-    </g>
-    <!-- Sand Highlights & Lobe Contours -->
-    <g fill="#FDE4CA">
-      <rect x="90" y="27" width="18" height="9" />
-      <rect x="99" y="36" width="18" height="9" />
-      <rect x="108" y="45" width="18" height="9" />
-      <rect x="99" y="63" width="18" height="9" />
-      <rect x="81" y="72" width="18" height="9" />
-    </g>
-    <g fill="#B08665">
-      <rect x="99" y="45" width="9" height="18" />
-      <rect x="81" y="54" width="18" height="9" />
-      <rect x="108" y="72" width="9" height="9" />
-      <rect x="126" y="54" width="9" height="9" />
+    <!-- Monitor Outer Chassis -->
+    <rect x="75" y="12" width="184" height="106" rx="8" fill="#8E6348" />
+    <rect x="77" y="14" width="180" height="102" rx="6" fill="#D5AC8E" />
+
+    <!-- Screen Bezel & Display -->
+    <rect x="83" y="20" width="168" height="90" rx="4" fill="url(#screenGrad)" />
+
+    <!-- Terminal Window Bar -->
+    <rect x="83" y="20" width="168" height="15" rx="3" fill="#232733" />
+    <circle cx="93" cy="27" r="3.2" fill="#F8969E" />
+    <circle cx="103" cy="27" r="3.2" fill="#FFD3B6" />
+    <circle cx="113" cy="27" r="3.2" fill="#A8D8B9" />
+
+    <!-- Screen Content: Clear Vector AI Neural Brain & Code Lines -->
+    <!-- Clear Vector AI Brain on Screen -->
+    <g transform="translate(167, 68) scale(0.9)">
+      <!-- Left Brain Hemisphere -->
+      <path d="M-4,-24 C-16,-24 -26,-15 -26,-4 C-26,2 -22,8 -20,11 C-25,14 -24,24 -16,25 C-12,25 -8,23 -4,21 Z" fill="none" stroke="#F8969E" stroke-width="2" stroke-linecap="round" />
+      <!-- Right Brain Hemisphere -->
+      <path d="M4,-24 C16,-24 26,-15 26,-4 C26,2 22,8 20,11 C25,14 24,24 16,25 C12,25 8,23 4,21 Z" fill="none" stroke="#FFD3B6" stroke-width="2" stroke-linecap="round" />
+      
+      <!-- Central Neural Core Line -->
+      <line x1="0" y1="-20" x2="0" y2="20" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6" />
+
+      <!-- Synaptic Nodes & Connection Lines -->
+      <line x1="-15" y1="-8" x2="0" y2="0" stroke="#F8969E" stroke-width="1.2" opacity="0.7" />
+      <line x1="15" y1="-8" x2="0" y2="0" stroke="#FFD3B6" stroke-width="1.2" opacity="0.7" />
+      <line x1="-10" y1="12" x2="0" y2="0" stroke="#F8969E" stroke-width="1.2" opacity="0.7" />
+      <line x1="10" y1="12" x2="0" y2="0" stroke="#FFD3B6" stroke-width="1.2" opacity="0.7" />
+
+      <!-- Glowing Neural Dots -->
+      <circle cx="-15" cy="-8" r="3" fill="#F8969E" filter="url(#sparkleGlow)" />
+      <circle cx="15" cy="-8" r="3" fill="#FFD3B6" filter="url(#sparkleGlow)" />
+      <circle cx="-10" cy="12" r="2.8" fill="#F8969E" />
+      <circle cx="10" cy="12" r="2.8" fill="#FFD3B6" />
+      <circle cx="0" cy="0" r="3.5" fill="#FFFFFF" filter="url(#sparkleGlow)" />
     </g>
 
-    <!-- Floating Pixel Synapses / Sparks -->
+    <!-- Mini Code / Terminal Labels on Screen -->
+    <text x="92" y="47" font-family="'Fira Code', 'Courier New', monospace" font-size="9" fill="#F8969E" font-weight="600">&gt; siddhi.ai()</text>
+    <text x="92" y="98" font-family="'Fira Code', 'Courier New', monospace" font-size="8" fill="#8B949E">neural core: OK</text>
+
+    <!-- Floating Sparkles around Monitor -->
     <g fill="#FFFAF4" filter="url(#sparkleGlow)">
-      <rect x="160" y="30" width="9" height="9" />
-      <rect x="185" y="52" width="7" height="7" />
-      <rect x="150" y="72" width="8" height="8" />
-      <rect x="175" y="90" width="10" height="10" />
-    </g>
-    <g fill="#FDE4CA">
-      <rect x="162" y="20" width="6" height="6" />
-      <rect x="195" y="42" width="7" height="7" />
-      <rect x="140" y="42" width="7" height="7" />
-      <rect x="165" y="110" width="6" height="6" />
+      <rect x="270" y="30" width="8" height="8" />
+      <rect x="285" y="65" width="6" height="6" />
+      <rect x="58" y="40" width="6" height="6" />
+      <rect x="260" y="95" width="7" height="7" />
     </g>
 
-    <!-- PIXEL ART MOUSE -->
-    <g transform="translate(5, 120)">
+    <!-- MOUSE (Left of Keyboard) -->
+    <g transform="translate(5, 126)">
       <!-- Mouse Body -->
       <rect x="12" y="18" width="24" height="42" rx="10" fill="#D98897" />
       <rect x="15" y="21" width="8" height="18" rx="4" fill="#EFA3AF" />
@@ -112,12 +107,12 @@
       <rect x="15" y="42" width="18" height="14" rx="5" fill="#EFA3AF" />
       <!-- Scroll Wheel -->
       <rect x="22" y="24" width="4" height="9" rx="2" fill="#6D3A44" />
-      <!-- Mouse Cord Connecting to System -->
+      <!-- Mouse Cord Connecting to Keyboard Chassis -->
       <path d="M24,18 C24,5 45,5 45,15 C45,25 70,25 70,35 L70,45" fill="none" stroke="#D98897" stroke-width="3" stroke-linecap="round" />
     </g>
 
-    <!-- PIXEL ART MECHANICAL KEYBOARD -->
-    <g transform="translate(75, 125)">
+    <!-- MECHANICAL KEYBOARD -->
+    <g transform="translate(75, 134)">
       <!-- Case Outline & Bevel -->
       <rect x="0" y="0" width="185" height="72" rx="8" fill="#8E6348" />
       <rect x="2" y="2" width="181" height="68" rx="6" fill="#D5AC8E" />
@@ -170,14 +165,19 @@
     </g>
   </g>
 
-  <!-- Right: Header Typography Matching the Reference -->
+  <!-- Right: Header Typography & Non-Overlapping Stars -->
   <g transform="translate(420, 142)">
-    <text x="0" y="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Outfit', 'Roboto', sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" filter="url(#textShadow)" letter-spacing="0.5">
+    <!-- Name Text -->
+    <text x="0" y="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Outfit', 'Roboto', sans-serif" font-size="48" font-weight="800" fill="#FFFFFF" filter="url(#textShadow)" letter-spacing="0.5">
       Hi, I'm Siddhi
     </text>
     
-    <!-- Golden Sparkle Stars -->
-    <path d="M350,-35 L357,-20 L372,-13 L357,-6 L350,9 L343,-6 L328,-13 L343,-20 Z" fill="#FFE0A3" filter="url(#sparkleGlow)" />
-    <path d="M375,-42 L379,-32 L389,-28 L379,-24 L375,-14 L371,-24 L361,-28 L371,-32 Z" fill="#FFF4D9" />
+    <!-- Golden Sparkle Stars: Placed at x=375 with generous margin (zero overlap!) -->
+    <g transform="translate(375, -16)">
+      <!-- Large 4-point Sparkle Star -->
+      <path d="M 0,-24 L 6,-6 L 24,0 L 6,6 L 0,24 L -6,6 L -24,0 L -6,-6 Z" fill="#FFE0A3" filter="url(#sparkleGlow)" />
+      <!-- Small Sparkle Star (top right) -->
+      <path d="M 24,-20 L 27,-12 L 35,-9 L 27,-6 L 24,2 L 21,-6 L 13,-9 L 21,-12 Z" fill="#FFF4D9" />
+    </g>
   </g>
 </svg>

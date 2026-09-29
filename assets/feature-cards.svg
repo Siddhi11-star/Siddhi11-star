@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 185" width="100%" height="185">
+  <defs>
+    <!-- Card Border Gradient -->
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8969E" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#30363D" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Star Glow -->
+    <filter id="starGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- CARD 1: Python Brain -->
+  <g transform="translate(15, 10)">
+    <rect width="270" height="122" rx="10" fill="#131720" stroke="url(#cardBorder)" stroke-width="1.2" />
+    <!-- Title -->
+    <text x="20" y="32" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Outfit', 'Roboto', sans-serif" font-size="18" font-weight="700" fill="#E896A0">
+      Python Brain
+    </text>
+    <!-- Cute Mini Tech Badges (Python & Atom/React) -->
+    <g transform="translate(20, 44)">
+      <!-- Mini Python Icon -->
+      <g transform="scale(0.85)">
+        <!-- Top Half (Soft Pink) -->
+        <path d="M 9.8 0 C 4.5 0 4.8 2.3 4.8 2.3 L 4.8 4.7 L 9.9 4.7 L 9.9 5.5 L 2.8 5.5 C 0.8 5.5 0 6.6 0 9 C 0 11.4 1.7 11.4 1.7 11.4 L 3.2 11.4 L 3.2 9.8 C 3.2 7.9 4.7 7.9 4.7 7.9 L 9.9 7.9 C 11.7 7.9 11.7 6.4 11.7 6.4 L 11.7 2.3 C 11.7 0.8 9.8 0 9.8 0 Z M 7.2 1.4 C 7.7 1.4 8.1 1.8 8.1 2.3 C 8.1 2.8 7.7 3.2 7.2 3.2 C 6.7 3.2 6.3 2.8 6.3 2.3 C 6.3 1.8 6.7 1.4 7.2 1.4 Z" fill="#F8969E" />
+        <!-- Bottom Half (Warm Peach) -->
+        <path d="M 9.8 19.6 C 15.1 19.6 14.8 17.3 14.8 17.3 L 14.8 14.9 L 9.7 14.9 L 9.7 14.1 L 16.8 14.1 C 18.8 14.1 19.6 13 19.6 10.6 C 19.6 8.2 17.9 8.2 17.9 8.2 L 16.4 8.2 L 16.4 9.8 C 16.4 11.7 14.9 11.7 14.9 11.7 L 9.7 11.7 C 7.9 11.7 7.9 13.2 7.9 13.2 L 7.9 17.3 C 7.9 18.8 9.8 19.6 9.8 19.6 Z M 12.4 18.2 C 11.9 18.2 11.5 17.8 11.5 17.3 C 11.5 16.8 11.9 16.4 12.4 16.4 C 12.9 16.4 13.3 16.8 13.3 17.3 C 13.3 17.8 12.9 18.2 12.4 18.2 Z" fill="#FAD4C0" />
+      </g>
+      <!-- Mini Atom/React Icon -->
+      <g transform="translate(25, 0) scale(0.85)">
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(30 10 10)" />
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(90 10 10)" />
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(150 10 10)" />
+        <circle cx="10" cy="10" r="1.8" fill="#F8969E" />
+      </g>
+    </g>
+    <!-- Description -->
+    <text x="20" y="86" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#C9D1D9" opacity="0.9">
+      Python prods &amp; AI learning
+    </text>
+    <text x="20" y="104" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#8B949E">
+      pipelines &amp; neural architectures.
+    </text>
+  </g>
+
+  <!-- CARD 2: React Cards -->
+  <g transform="translate(315, 10)">
+    <rect width="270" height="122" rx="10" fill="#131720" stroke="url(#cardBorder)" stroke-width="1.2" />
+    <!-- Title -->
+    <text x="20" y="32" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Outfit', 'Roboto', sans-serif" font-size="18" font-weight="700" fill="#E896A0">
+      React Cards
+    </text>
+    <!-- Cute Mini Tech Badges -->
+    <g transform="translate(20, 44)">
+      <!-- Mini Python Icon -->
+      <g transform="scale(0.85)">
+        <path d="M 9.8 0 C 4.5 0 4.8 2.3 4.8 2.3 L 4.8 4.7 L 9.9 4.7 L 9.9 5.5 L 2.8 5.5 C 0.8 5.5 0 6.6 0 9 C 0 11.4 1.7 11.4 1.7 11.4 L 3.2 11.4 L 3.2 9.8 C 3.2 7.9 4.7 7.9 4.7 7.9 L 9.9 7.9 C 11.7 7.9 11.7 6.4 11.7 6.4 L 11.7 2.3 C 11.7 0.8 9.8 0 9.8 0 Z M 7.2 1.4 C 7.7 1.4 8.1 1.8 8.1 2.3 C 8.1 2.8 7.7 3.2 7.2 3.2 C 6.7 3.2 6.3 2.8 6.3 2.3 C 6.3 1.8 6.7 1.4 7.2 1.4 Z" fill="#F8969E" />
+        <path d="M 9.8 19.6 C 15.1 19.6 14.8 17.3 14.8 17.3 L 14.8 14.9 L 9.7 14.9 L 9.7 14.1 L 16.8 14.1 C 18.8 14.1 19.6 13 19.6 10.6 C 19.6 8.2 17.9 8.2 17.9 8.2 L 16.4 8.2 L 16.4 9.8 C 16.4 11.7 14.9 11.7 14.9 11.7 L 9.7 11.7 C 7.9 11.7 7.9 13.2 7.9 13.2 L 7.9 17.3 C 7.9 18.8 9.8 19.6 9.8 19.6 Z M 12.4 18.2 C 11.9 18.2 11.5 17.8 11.5 17.3 C 11.5 16.8 11.9 16.4 12.4 16.4 C 12.9 16.4 13.3 16.8 13.3 17.3 C 13.3 17.8 12.9 18.2 12.4 18.2 Z" fill="#FAD4C0" />
+      </g>
+      <!-- Mini Atom/React Icon -->
+      <g transform="translate(25, 0) scale(0.85)">
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(30 10 10)" />
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(90 10 10)" />
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(150 10 10)" />
+        <circle cx="10" cy="10" r="1.8" fill="#F8969E" />
+      </g>
+    </g>
+    <!-- Description -->
+    <text x="20" y="86" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#C9D1D9" opacity="0.9">
+      Interactive user interfaces &amp;
+    </text>
+    <text x="20" y="104" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#8B949E">
+      modern full-stack web applications.
+    </text>
+  </g>
+
+  <!-- CARD 3: Python Cards -->
+  <g transform="translate(615, 10)">
+    <rect width="270" height="122" rx="10" fill="#131720" stroke="url(#cardBorder)" stroke-width="1.2" />
+    <!-- Title -->
+    <text x="20" y="32" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Outfit', 'Roboto', sans-serif" font-size="18" font-weight="700" fill="#E896A0">
+      Python Cards
+    </text>
+    <!-- Cute Mini Tech Badges -->
+    <g transform="translate(20, 44)">
+      <!-- Mini Python Icon -->
+      <g transform="scale(0.85)">
+        <path d="M 9.8 0 C 4.5 0 4.8 2.3 4.8 2.3 L 4.8 4.7 L 9.9 4.7 L 9.9 5.5 L 2.8 5.5 C 0.8 5.5 0 6.6 0 9 C 0 11.4 1.7 11.4 1.7 11.4 L 3.2 11.4 L 3.2 9.8 C 3.2 7.9 4.7 7.9 4.7 7.9 L 9.9 7.9 C 11.7 7.9 11.7 6.4 11.7 6.4 L 11.7 2.3 C 11.7 0.8 9.8 0 9.8 0 Z M 7.2 1.4 C 7.7 1.4 8.1 1.8 8.1 2.3 C 8.1 2.8 7.7 3.2 7.2 3.2 C 6.7 3.2 6.3 2.8 6.3 2.3 C 6.3 1.8 6.7 1.4 7.2 1.4 Z" fill="#F8969E" />
+        <path d="M 9.8 19.6 C 15.1 19.6 14.8 17.3 14.8 17.3 L 14.8 14.9 L 9.7 14.9 L 9.7 14.1 L 16.8 14.1 C 18.8 14.1 19.6 13 19.6 10.6 C 19.6 8.2 17.9 8.2 17.9 8.2 L 16.4 8.2 L 16.4 9.8 C 16.4 11.7 14.9 11.7 14.9 11.7 L 9.7 11.7 C 7.9 11.7 7.9 13.2 7.9 13.2 L 7.9 17.3 C 7.9 18.8 9.8 19.6 9.8 19.6 Z M 12.4 18.2 C 11.9 18.2 11.5 17.8 11.5 17.3 C 11.5 16.8 11.9 16.4 12.4 16.4 C 12.9 16.4 13.3 16.8 13.3 17.3 C 13.3 17.8 12.9 18.2 12.4 18.2 Z" fill="#FAD4C0" />
+      </g>
+      <!-- Mini Atom/React Icon -->
+      <g transform="translate(25, 0) scale(0.85)">
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(30 10 10)" />
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(90 10 10)" />
+        <ellipse cx="10" cy="10" rx="9" ry="3.5" fill="none" stroke="#E2BE9E" stroke-width="1.2" transform="rotate(150 10 10)" />
+        <circle cx="10" cy="10" r="1.8" fill="#F8969E" />
+      </g>
+    </g>
+    <!-- Description -->
+    <text x="20" y="86" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#C9D1D9" opacity="0.9">
+      Beautifully designed repositories
+    </text>
+    <text x="20" y="104" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="13" fill="#8B949E">
+      &amp; healthcare diagnostic solutions.
+    </text>
+
+    <!-- Corner Sparkle Star (As in Reference) -->
+    <g transform="translate(240, 110)" filter="url(#starGlow)">
+      <path d="M 0,-14 L 3,-4 L 14,0 L 3,4 L 0,14 L -3,4 L -14,0 L -3,-4 Z" fill="#B3B9C5" opacity="0.75" />
+      <path d="M 0,-8 L 2,-2 L 8,0 L 2,2 L 0,8 L -2,2 L -8,0 L -2,-2 Z" fill="#FFFFFF" opacity="0.9" />
+    </g>
+  </g>
+
+  <!-- Bottom Centered Subtitle Quote -->
+  <g transform="translate(450, 168)">
+    <text text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Outfit', 'Roboto', sans-serif" font-size="14.5" font-weight="500" fill="#E896A0" letter-spacing="0.4">
+      Continuous Learner • Innovator 🌸
+    </text>
+  </g>
+</svg>

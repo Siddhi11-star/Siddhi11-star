@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="100%" height="250">
+  <defs>
+    <!-- Background Gradient Matching the Reference -->
+    <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#D9808E" />
+      <stop offset="35%" stop-color="#DC8F8F" />
+      <stop offset="70%" stop-color="#D49B88" />
+      <stop offset="100%" stop-color="#C89B84" />
+    </linearGradient>
+
+    <!-- Drop Shadow for Text -->
+    <filter id="textShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.22" />
+    </filter>
+    
+    <!-- Glow filter -->
+    <filter id="sparkleGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="250" rx="14" fill="url(#bannerGrad)" />
+
+  <!-- Background Pixel Specks -->
+  <g opacity="0.2" fill="#FFFFFF">
+    <rect x="50" y="25" width="6" height="6" />
+    <rect x="120" y="18" width="6" height="6" />
+    <rect x="80" y="55" width="6" height="6" />
+    <rect x="230" y="35" width="6" height="6" />
+    <rect x="270" y="75" width="7" height="7" />
+    <rect x="320" y="115" width="7" height="7" />
+    <rect x="300" y="145" width="6" height="6" />
+    <rect x="350" y="85" width="7" height="7" />
+  </g>
+
+  <!-- Left: Pixel Art Tech Illustration (Brain + Keyboard + Mouse) -->
+  <g transform="translate(45, 20)">
+
+    <!-- PIXEL ART BRAIN -->
+    <!-- Left Lobe (Soft Pink / Magenta) -->
+    <g fill="#E58897">
+      <rect x="54" y="18" width="18" height="9" />
+      <rect x="36" y="27" width="36" height="9" />
+      <rect x="27" y="36" width="54" height="9" />
+      <rect x="18" y="45" width="63" height="18" />
+      <rect x="27" y="63" width="54" height="18" />
+      <rect x="36" y="81" width="45" height="9" />
+      <rect x="45" y="90" width="36" height="9" />
+    </g>
+    <!-- Pink Highlights & Lobe Contours -->
+    <g fill="#F7A8B5">
+      <rect x="45" y="27" width="18" height="9" />
+      <rect x="36" y="36" width="18" height="9" />
+      <rect x="27" y="45" width="18" height="9" />
+      <rect x="36" y="63" width="18" height="9" />
+      <rect x="54" y="72" width="18" height="9" />
+    </g>
+    <g fill="#B85C6C">
+      <rect x="45" y="45" width="9" height="18" />
+      <rect x="54" y="54" width="18" height="9" />
+      <rect x="36" y="72" width="9" height="9" />
+      <rect x="18" y="54" width="9" height="9" />
+    </g>
+
+    <!-- Right Lobe (Warm Golden Sand / Beige) -->
+    <g fill="#E2BE9E">
+      <rect x="81" y="18" width="18" height="9" />
+      <rect x="81" y="27" width="36" height="9" />
+      <rect x="72" y="36" width="54" height="9" />
+      <rect x="72" y="45" width="63" height="18" />
+      <rect x="72" y="63" width="54" height="18" />
+      <rect x="72" y="81" width="45" height="9" />
+      <rect x="72" y="90" width="36" height="9" />
+    </g>
+    <!-- Sand Highlights & Lobe Contours -->
+    <g fill="#FDE4CA">
+      <rect x="90" y="27" width="18" height="9" />
+      <rect x="99" y="36" width="18" height="9" />
+      <rect x="108" y="45" width="18" height="9" />
+      <rect x="99" y="63" width="18" height="9" />
+      <rect x="81" y="72" width="18" height="9" />
+    </g>
+    <g fill="#B08665">
+      <rect x="99" y="45" width="9" height="18" />
+      <rect x="81" y="54" width="18" height="9" />
+      <rect x="108" y="72" width="9" height="9" />
+      <rect x="126" y="54" width="9" height="9" />
+    </g>
+
+    <!-- Floating Pixel Synapses / Sparks -->
+    <g fill="#FFFAF4" filter="url(#sparkleGlow)">
+      <rect x="160" y="30" width="9" height="9" />
+      <rect x="185" y="52" width="7" height="7" />
+      <rect x="150" y="72" width="8" height="8" />
+      <rect x="175" y="90" width="10" height="10" />
+    </g>
+    <g fill="#FDE4CA">
+      <rect x="162" y="20" width="6" height="6" />
+      <rect x="195" y="42" width="7" height="7" />
+      <rect x="140" y="42" width="7" height="7" />
+      <rect x="165" y="110" width="6" height="6" />
+    </g>
+
+    <!-- PIXEL ART MOUSE -->
+    <g transform="translate(5, 120)">
+      <!-- Mouse Body -->
+      <rect x="12" y="18" width="24" height="42" rx="10" fill="#D98897" />
+      <rect x="15" y="21" width="8" height="18" rx="4" fill="#EFA3AF" />
+      <rect x="25" y="21" width="8" height="18" rx="4" fill="#EFA3AF" />
+      <rect x="15" y="42" width="18" height="14" rx="5" fill="#EFA3AF" />
+      <!-- Scroll Wheel -->
+      <rect x="22" y="24" width="4" height="9" rx="2" fill="#6D3A44" />
+      <!-- Mouse Cord Connecting to System -->
+      <path d="M24,18 C24,5 45,5 45,15 C45,25 70,25 70,35 L70,45" fill="none" stroke="#D98897" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- PIXEL ART MECHANICAL KEYBOARD -->
+    <g transform="translate(75, 125)">
+      <!-- Case Outline & Bevel -->
+      <rect x="0" y="0" width="185" height="72" rx="8" fill="#8E6348" />
+      <rect x="2" y="2" width="181" height="68" rx="6" fill="#D5AC8E" />
+      <rect x="6" y="6" width="173" height="60" rx="4" fill="#EED1B9" />
+
+      <!-- Keycaps (Pixel Grid Matrix) -->
+      <g fill="#FFF1E5">
+        <!-- Row 1 -->
+        <rect x="10" y="10" width="12" height="9" rx="1" />
+        <rect x="26" y="10" width="12" height="9" rx="1" />
+        <rect x="42" y="10" width="12" height="9" rx="1" />
+        <rect x="58" y="10" width="12" height="9" rx="1" />
+        <rect x="74" y="10" width="12" height="9" rx="1" />
+        <rect x="90" y="10" width="12" height="9" rx="1" />
+        <rect x="106" y="10" width="12" height="9" rx="1" />
+        <rect x="122" y="10" width="12" height="9" rx="1" />
+        <rect x="138" y="10" width="12" height="9" rx="1" />
+        <rect x="154" y="10" width="20" height="9" rx="1" />
+
+        <!-- Row 2 -->
+        <rect x="10" y="22" width="17" height="9" rx="1" />
+        <rect x="31" y="22" width="12" height="9" rx="1" />
+        <rect x="47" y="22" width="12" height="9" rx="1" />
+        <rect x="63" y="22" width="12" height="9" rx="1" />
+        <rect x="79" y="22" width="12" height="9" rx="1" />
+        <rect x="95" y="22" width="12" height="9" rx="1" />
+        <rect x="111" y="22" width="12" height="9" rx="1" />
+        <rect x="127" y="22" width="12" height="9" rx="1" />
+        <rect x="143" y="22" width="12" height="9" rx="1" />
+        <rect x="159" y="22" width="15" height="9" rx="1" />
+
+        <!-- Row 3 -->
+        <rect x="10" y="34" width="21" height="9" rx="1" />
+        <rect x="35" y="34" width="12" height="9" rx="1" />
+        <rect x="51" y="34" width="12" height="9" rx="1" />
+        <rect x="67" y="34" width="12" height="9" rx="1" />
+        <rect x="83" y="34" width="12" height="9" rx="1" />
+        <rect x="99" y="34" width="12" height="9" rx="1" />
+        <rect x="115" y="34" width="12" height="9" rx="1" />
+        <rect x="131" y="34" width="12" height="9" rx="1" />
+        <rect x="147" y="34" width="27" height="9" rx="1" />
+
+        <!-- Row 4 (Spacebar Row) -->
+        <rect x="10" y="46" width="22" height="9" rx="1" />
+        <rect x="36" y="46" width="16" height="9" rx="1" />
+        <rect x="56" y="46" width="76" height="9" rx="1" fill="#FEE9D7" />
+        <rect x="136" y="46" width="18" height="9" rx="1" />
+        <rect x="158" y="46" width="16" height="9" rx="1" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Header Typography Matching the Reference -->
+  <g transform="translate(420, 142)">
+    <text x="0" y="0" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, 'Outfit', 'Roboto', sans-serif" font-size="52" font-weight="800" fill="#FFFFFF" filter="url(#textShadow)" letter-spacing="0.5">
+      Hi, I'm Siddhi
+    </text>
+    
+    <!-- Golden Sparkle Stars -->
+    <path d="M350,-35 L357,-20 L372,-13 L357,-6 L350,9 L343,-6 L328,-13 L343,-20 Z" fill="#FFE0A3" filter="url(#sparkleGlow)" />
+    <path d="M375,-42 L379,-32 L389,-28 L379,-24 L375,-14 L371,-24 L361,-28 L371,-32 Z" fill="#FFF4D9" />
+  </g>
+</svg>

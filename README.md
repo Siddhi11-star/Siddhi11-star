@@ -1,7 +1,14 @@
 <div align="center">
 
-  <!-- Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F8969E,50:FFAAA6,100:FFD3B6&height=200&section=header&text=Hi%2C%20I%27m%20Siddhi%20%E2%9C%A8&fontSize=42&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" width="100%" />
+  <!-- Custom Pixel-Art Tech Banner -->
+  <img src="assets/banner.svg" alt="Hi, I'm Siddhi ✨" width="100%" />
+
+  <br/><br/>
+
+  <!-- Interactive 3-Card Feature Grid & Tagline -->
+  <img src="assets/feature-cards.svg" alt="Feature Cards • Continuous Learner • Innovator" width="100%" />
+
+  <br/>
 
   <!-- Animated Typing Subtitle -->
   <p align="center">

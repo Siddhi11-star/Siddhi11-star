@@ -121,20 +121,10 @@
 
 <div align="center">
 
-  <table border="0">
-    <tr>
-      <td align="center" valign="middle">
-        <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Siddhi11-star&show_icons=true&title_color=F8969E&icon_color=F8969E&text_color=E6EDF3&bg_color=0D1117&border_color=F8969E33&hide_border=false" alt="Siddhi's GitHub Stats" />
-      </td>
-      <td align="center" valign="middle">
-        <img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Siddhi11-star&layout=compact&title_color=F8969E&text_color=E6EDF3&bg_color=0D1117&border_color=F8969E33&hide_border=false" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-
-  <br/>
-
-  <img src="https://streak-stats.demolab.com/?user=Siddhi11-star&theme=dark&background=0D1117&border=F8969E33&stroke=F8969E33&ring=F8969E&fire=F8969E&currStreakLabel=F8969E&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak" />
+  <p align="center">
+    <img src="https://github-stats-alpha.vercel.app/api?username=Siddhi11-star&show_icons=true&title_color=F8969E&icon_color=F8969E&text_color=E6EDF3&bg_color=0D1117&border_color=F8969E33&hide_border=false" alt="Siddhi's GitHub Stats" />
+    <img src="https://streak-stats.demolab.com/?user=Siddhi11-star&theme=dark&background=0D1117&border=F8969E33&stroke=F8969E33&ring=F8969E&fire=F8969E&currStreakLabel=F8969E&currStreakNum=FFFFFF&sideNums=FFFFFF&sideLabels=8B949E&dates=8B949E" alt="GitHub Streak" />
+  </p>
 
 </div>
 
